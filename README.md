@@ -138,6 +138,7 @@ Produk dengan karakteristik tersebut masih memiliki error yang cukup besar, sehi
 Dengan bantuan model ini tentu perusahaan mendapat keuntungan: 
 - Hasil dari competitor-based analysis dengan model ini lebih objektif dibanding dengan proses konvensional
 - Perusahaan dapat menghemat waktu untuk menentukan harga jual yang masih dapat bersaing dengan pasar, karena untuk menentukan perkiraan harga, perusahaan hanya perlu memasukkan detail produk dan dalam hitungan detik perusahaan mendapatkan perkiraan harga produk.
+- - Dalam riset yang kami lakukan, rata-rata perusahaan melakukan perencanaan harga adalah 4 hari [link artikel](https://www.researchgate.net/profile/Eric-Kh-Leung/publication/330557347_A_B2B_flexible_pricing_decision_support_system_for_managing_the_request_for_quotation_process_under_e-commerce_business_environment/links/5cdc5354458515712eadb28e/A-B2B-flexible-pricing-decision-support-system-for-managing-the-request-for-quotation-process-under-e-commerce-business-environment.pdf). Dengan model kami tentu perusahaan dapat mengalokasi waktu ini untuk kegiatan lain yang lebih bermanfaat untuk perusahaan. 
 
 ## Recommendation
 Berdasarkan hasil yang kami peroleh, terlihat model masih bisa dioptimalkan kembali. Beberapa hal yang mungkin dapat membuat model prediksi menjadi lebih baik: 
@@ -146,6 +147,8 @@ Berdasarkan hasil yang kami peroleh, terlihat model masih bisa dioptimalkan kemb
 
 2. Penambahan data dari berbagai kompetitor juga dapat membuat prediksi harga menjadi lebih akurat, karena pada kenyataannya banyak pemain besar lainnya selain IKEA dalam bidang furnitur di Saudi Arabia
 
-3. Jika fitur dan data bertambah, dapat dicoba menggunakan model regresi lain yang lebih kompleks seperti deep learning atau neural network.  
+3. Saat melakukan hyperparameter tuning, bisa juga digunakan metode gridsearch serta parameter model yang lebih beragam untuk mendapatkan hasil yang lebih optimal. Karena pada model kami karena keterbatasan waktu dan alat, kami hanya melakukan 100 iterasi. 
+
+4. Jika fitur dan data bertambah, dapat dicoba menggunakan model regresi lain yang lebih kompleks seperti deep learning atau neural network.  
 
 
