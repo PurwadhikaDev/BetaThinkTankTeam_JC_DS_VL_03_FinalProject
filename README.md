@@ -1,5 +1,5 @@
 # BetaThinkTankTeam_JC_DS_VL_03_FinalProject
-[contoh](BetaThinkTankTeam_JC_DS_VL_03_FinalProject/Dataset/)
+[contoh](BetaThinkTankTeam_JC_DS_VL_03_FinalProject/Dataset)
 
 by: 
 - Ismy Navira Fauziah
