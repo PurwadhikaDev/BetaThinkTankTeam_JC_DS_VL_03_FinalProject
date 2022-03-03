@@ -1,10 +1,9 @@
 # BetaThinkTankTeam_JC_DS_VL_03_FinalProject
-[contoh](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/tree/main/Dataset)
 
 by: 
-- Ismy Navira Fauziah
-- Indradi Khalid Maulana
-- Suci Laksono
+- Ismy Navira Fauziah (ismynavira06@gmail.com)
+- Indradi Khalid Maulana (indradikhalidm@gmail.com)
+- Suci Laksono (suci.laksono@gmail.com)
 
 # Price prediction model to help new furniture companies perform competitor-based analysis
 > Untuk lebih lengkap dapat melihat pada file: 
@@ -97,5 +96,56 @@ Berikut spesifikasi tahap pemodelan kami:
 Berikut adalah hasil dari pemodelan yang kami lakukan: 
 ## Model benchmark
 Dari metrics evaluasi yang kami pilih, di bawah ini adalah hasil dari evaluasi tersebut: 
+![summary](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/blob/main/img/summary.png)
+
+Dari hasil evaluasi kami mengambil 2 model terbaik untuk dilakukan tuning. Model tersebut adalah RandomForest dan XGBoost
+
+## Hyperparameter Tuning
+Selanjutnya setelah mendapat 2 model terbaik, kami melakukan tuning untuk mendapat parameter dengan hasil yang terbaik. 
+Berikut adalah hasil dari sebelum tuning dan setelah tuning dengan menggunakan test set. 
+- Before tuning:
+![summary](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/blob/main/img/before%20tuning.png)
+
+- After tuning: 
+![summary](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/blob/main/img/after%20tuning.png)
+
+Dari hasil hyperparameter tuning, kami memutuskan untuk menggunakan model XGBoost Regressor pada model price prediction kami. 
+
+# 6. Conclusion & Recommendation
+## Conclusion
+Berdasarkan hasil analisis dan pembuatan Model Machine Learning, model yang terpilih adalah **XGBoost Regressor** dengan parameter:
+ - model__subsample: 0.6
+ - model__n_estimator: 700
+ - model__max_depth: 14
+ - model__learning_rate: 0.08
+ - model__colsample_bytree: 0.9
+
+Pada model ini, fitur yang paling berpengaruh terhadap penentuan harga adalah fitur dimensi (width, depth, height) dan num_designer dimana semkain besar nilai fitur ini akan membuat harga furnitur semakin mahal, sehingga perusahaan harus memperhatikan fitur-fitur tersebut dalam mementukan harga produk.
+
+Model ini memiliki R2 sebesar 0.84 atau 84%, yang artinya seluruh fitur berpengaruh secara simultan terhadap target(old_price), sedangkan 16% nya dipengaruhi oleh variabel lain yang tidak diteliti dalam model.
+
+Apabila perusahaan menggunakan model ini, jika kita tinjau dari nilai MAE (rata-rata error absolute), dengan model yang sudah kita buat akan menghasilkan perkiraan harga yang meleset rata-rata sebesar 345 SR, tetapi tidak menutup kemungkinan harga akan meleset lebih jauh karena masih terdapat bias pada model seperti pada plot aktual vs prediksi.
+
+Kedepannya untuk penetuan harga produk, perusahaan harus memperhatikan produk-produk dengan karakteristik sebagai berikut :
+1. Produk yang memiliki kategori Sofas & Armchairs
+2. Produk yang didesign oleh 1 designer
+3. Produk dengan depth 98 cm
+4. Produk dengan height 83 cm
+5. Produk dengan width 80 dan 160 cm
+
+Produk dengan karakteristik tersebut masih memiliki error yang cukup besar, sehingga prediksi harga masih underestimasi atau overestimasi.
+
+Dengan bantuan model ini tentu perusahaan mendapat keuntungan: 
+- Hasil dari competitor-based analysis dengan model ini lebih objektif dibanding dengan proses konvensional
+- Perusahaan dapat menghemat waktu untuk menentukan harga jual yang masih dapat bersaing dengan pasar, karena untuk menentukan perkiraan harga, perusahaan hanya perlu memasukkan detail produk dan dalam hitungan detik perusahaan mendapatkan perkiraan harga produk.
+
+## Recommendation
+Berdasarkan hasil yang kami peroleh, terlihat model masih bisa dioptimalkan kembali. Beberapa hal yang mungkin dapat membuat model prediksi menjadi lebih baik: 
+
+1. Jika memungkinkan, penambahan fitur yang lebih korelatif. Beberapa fitur tersebut seperti material furnitur, kelas furnitur (apakah termasuk barang mewah atau tidak), dan fitur lain berkaitan dengan furnitur.
+
+2. Penambahan data dari berbagai kompetitor juga dapat membuat prediksi harga menjadi lebih akurat, karena pada kenyataannya banyak pemain besar lainnya selain IKEA dalam bidang furnitur di Saudi Arabia
+
+3. Jika fitur dan data bertambah, dapat dicoba menggunakan model regresi lain yang lebih kompleks seperti deep learning atau neural network.  
 
 
