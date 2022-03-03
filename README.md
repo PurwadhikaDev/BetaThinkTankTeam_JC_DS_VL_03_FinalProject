@@ -1,5 +1,5 @@
 # BetaThinkTankTeam_JC_DS_VL_03_FinalProject
-[contoh](BetaThinkTankTeam_JC_DS_VL_03_FinalProject/Dataset)
+[contoh](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/tree/main/Dataset)
 
 by: 
 - Ismy Navira Fauziah
