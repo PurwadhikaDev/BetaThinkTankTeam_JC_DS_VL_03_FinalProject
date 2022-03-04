@@ -6,7 +6,7 @@ by:
 - Suci Laksono (suci.laksono@gmail.com)
 
 # Price prediction model to help new furniture companies perform competitor-based analysis
-> Untuk lebih lengkap dapat melihat pada file: 
+> Untuk lebih lengkap dapat melihat pada file: [Price_Prediction_Model](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/blob/main/Price_Prediction_Project.ipynb)
 
 # 1. Business Understanding
 ### Context/Background: 
