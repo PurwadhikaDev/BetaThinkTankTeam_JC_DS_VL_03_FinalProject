@@ -7,6 +7,8 @@ by:
 
 # Price prediction model to help new furniture companies perform competitor-based analysis
 > Untuk code dan hasil analisis lebih lengkap dapat melihat pada file: [Price_Prediction_Model](https://github.com/PurwadhikaDev/BetaThinkTankTeam_JC_DS_VL_03_FinalProject/blob/main/Price_Prediction_Project.ipynb)
+> demo app
+> https://prediksi-harga-furnitur.herokuapp.com/
 
 # 1. Business Understanding
 ### Context/Background: 
